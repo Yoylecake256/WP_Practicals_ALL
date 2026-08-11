@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathematical Operations.</title>
+</head>
+<body>
+    <h1>Mathematical</h1>
+    <label>Enter First number:</label>
+    <input type="number" id="num_1"><br>
+    <label> Enter Second number:</label>
+    <input type="number"id="num_2"><br>
+    <button onclick="calculate()">Calculate</button>
+    <h2 id="add"></h2>
+    <h2 id="sub"></h2>
+    <h2 id="mul"></h2>
+    <h2 id="div"></h2>
+    <script>
+        function calculate(){
+            var a = Number(document.getElementById("num_1").value);
+            var b = Number(document.getElementById("num_2").value);
+            document.getElementById("add").innerHTML = "Addition: " + (a + b);
+            document.getElementById("sub").innerHTML = "Subtraction: " + (a - b);
+            document.getElementById("mul").innerHTML = "Multiplication: " + (a * b);
+            document.getElementById("div").innerHTML = "Division: " + (a / b);
+        }
+    </script>
+</body>
+</html>
