@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<!--All Inline CSS-->
+<!--All External CSS-->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emerging Technologies</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body style="font-family: 'Courier New', Courier, monospace; background-color: coral; margin: 20px;">
+<body>
     <header>
-        <h1 style="text-align: center; color: #333;">Emerging Technologies Information Portal</h1>
+        <h1>Emerging Technologies Information Portal</h1>
         <p>Exploring Technologies Shaping the Future.</p>
         <hr>
         <nav>
@@ -30,44 +31,66 @@
         </p>
         <hr>
 
-        <!-- Flexbox Container -->
-        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px;">
-            
-            <!-- Card 1: AI -->
-            <div style="background-color: #fff; padding: 20px; border-radius: 8px; width: 300px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+        <div class="container">
+            <div class="card">
                 <h2>Artificial Intelligence</h2>
-                <img src="ai.jpeg" alt="Artificial Intelligence" style="width: 100%; height: 160px; object-fit: cover;">
+                <img src="ai.jpeg" alt="Artificial Intelligence">
                 <p>Artificial Intelligence (AI) enables computers to perform tasks that normally require human intelligence such as learning, reasoning, and decision-making.</p>
             </div>
 
-            <!-- Card 2: Cloud Computing -->
-            <div style="background-color: #fff; padding: 20px; border-radius: 8px; width: 300px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+            <div class="card">
                 <h2>Cloud Computing</h2>
-                <img src="cc.jpg" alt="Cloud Computing" style="width: 100%; height: 160px; object-fit: cover;">
+                <img src="cc.jpg" alt="Cloud Computing">
                 <p>Cloud Computing provides on-demand access to computing resources such as servers, storage, and applications over the internet.</p>
             </div>
 
-            <!-- Card 3: Cyber Security -->
-            <div style="background-color: #fff; padding: 20px; border-radius: 8px; width: 300px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+            <div class="card">
                 <h2>Cyber Security</h2>
-                <img src="cs.jpg" alt="Cyber Security" style="width: 100%; height: 160px; object-fit: cover;">
+                <img src="cs.jpg" alt="Cyber Security">
                 <p>Cyber Security protects computer systems, networks, and data from cyber threats and unauthorized access.</p>
             </div>
 
-            <!-- Card 4: IoT -->
-            <div style="background-color: #fff; padding: 20px; border-radius: 8px; width: 300px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+            <div class="card">
                 <h2>Internet of Things (IoT)</h2>
-                <img src="iot.jpg" alt="Internet of Things" style="width: 100%; height: 160px; object-fit: cover;">
+                <img src="iot.jpg" alt="Internet of Things">
                 <p>IoT connects physical devices to the internet, enabling them to collect and exchange data.</p>
             </div>
-
         </div>
     </main>
-
+    <h3>Technology Information Table:</h3>
+    <center>
+        <table border="2">
+            <tr>
+                <th>Technology</th>
+                <th>Category</th>
+                <th>Year Introduced</th>
+            </tr>
+            <tr>
+                <td>Artificial Intelligence</td>
+                <td>Software Technology</td>
+                <td>1956</td>
+            </tr>
+            <tr>
+                <td>Cloud Computing</td>
+                <td>Infrastructure Technology</td>
+                <td>2006</td>
+            </tr>
+            <tr>
+                <td>Cyber Security</td>
+                <td>Security Technology</td>
+                <td>1990</td>
+            </tr>
+            <tr>
+                <td>Internet of Things</td>
+                <td>Networking Technology</td>
+                <td>1999</td>
+            </tr>
+        </table>
+    </center>
     <footer>
         <center>
-            <h3>Emerging Technologies Information Portal</h3>
-            <p>Web Programming Laboratory</p>
+            <p><strong>Contact Us: </strong><u>info@techportal.com</u></p>
+            <p>©; 2026 Emerging Technologies Portal</p>
         </center>
     </footer>
 </body>
