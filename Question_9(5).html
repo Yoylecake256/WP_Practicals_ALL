@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="check_Box">
+        <label for="check">Select area of use of Emerging Technology: </label><br>
+        <input type="checkbox" id="AoE" value="Healthcare" name="qw">Healthcare <br>
+        <input type="checkbox" id="AoE" value="Education" name="qw">Education <br>
+        <input type="checkbox" id="AoE" value="Finance" name="qw">Finance <br>
+        <input type="checkbox" id="AoE" value="Industry" name="qw">Industry <br>
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+    <script>
+        document.getElementById("check_Box").addEventListener("submit", function(event){
+            event.preventDefault();
+            const selectedCB = document.querySelector('input[name="qw"]:checked');
+            if(!selectedCB){
+                alert("Please select atleast one option.");
+            }else{
+                alert("Form submitted successfully!");
+            }
+        });
+    </script>
+</body>
+</html>

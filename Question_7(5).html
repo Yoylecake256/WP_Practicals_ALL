@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeleCheck</title>
+</head>
+<body>
+    <form id="checkList">
+        <label for="selector">Select an Emerging Technology:</label><br>
+        <select id="selector">
+            <option value="">--Select Technology--</option>
+            <option value="ai">Artificial Intelligence</option>
+            <option value="cloud">Cloud Computing</option>
+            <option value="iot">Internet of Things(IoT)</option>
+            <option value="cyber">Cybersecurity</option>
+            <option value="blockchain">Blockchain</option>
+        </select>
+        <button type="submit">Submit</button>
+    </form>
+    <script>
+        document.getElementById("checkList").addEventListener("submit", function (event){
+            event.preventDefault();
+            
+            const selectedValue = document.getElementById("selector").value;
+            
+            if (selectedValue === "") {
+                alert("Please give a valid answer.");
+            } else {
+                alert("Option selected successfully!");
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Validation</title>
+</head>
+<body>
+    <form id="emailForm">
+        <label for="userEmail">Enter an email.</label><br>
+        <input type="email" id="userEmail" name="em">
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        document.getElementById("emailForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const emailInput = document.getElementById("userEmail").value.trim();
+
+            if (emailInput === "") {
+                alert("Cannot be empty.");
+            } else if (!emailInput.includes("@")) {
+                alert("Email must contain an '@' symbol.");
+            } else {
+                alert("Email submitted successfully!");
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="checkRadio">
+        <p>Select a technology type</p>
+        <input type="radio" name="type" id="software" value="Software">
+        <label for="software">Software</label>
+        
+        <input type="radio" name="type" id="hardware" value="Hardware">
+        <label for="hardware">Hardware</label>
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+    <script>
+        document.getElementById("checkRadio").addEventListener("submit", function(event){
+            event.preventDefault();
+            const selectedRadio = document.querySelector('input[name="type"]:checked');         
+            if(!selectedRadio){
+                alert("Select a type.");
+            }
+            else{
+                alert("Form Submitted!!");
+            }
+        });
+    </script>
+</body>
+</html>

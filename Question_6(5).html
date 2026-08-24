@@ -3,9 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TeleCheck</title>
 </head>
 <body>
-    
+    <form id="checkTel">
+        <label for="tel_Name">Enter your phone number.</label><br>
+        <input type="tel" id="tel_Name">
+        <button type="submit">Submit</button>
+    </form>
+    <script>
+        document.getElementById("checkTel").addEventListener("submit", function (event){
+            event.preventDefault();
+            const telInp = document.getElementById("tel_Name").value.trim();
+            if(telInp === ""){
+                alert("Add a valid phone number.");
+            }else if(telInp.length !== 10){
+                alert("Invalid Phone number, less number of digits.");
+            }
+            else{
+                alert("Submitted!");
+            }
+        });
+    </script>
 </body>
 </html>
